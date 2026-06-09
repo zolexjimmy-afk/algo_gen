@@ -65,7 +65,7 @@ Chaque "gène" est une stratégie de trading complète avec son propre ADN (para
 ### Agent MTF — Contexte de marché
 Analyse le marché sur 5 timeframes simultanément et produit pour chaque bougie 15m un vecteur contextuel structuré :
 
-- **Phase** : EXPANSION / CONTRACTION / DISTRIBUTION / ACCUMULATION / TRANSITION
+- **Phase** 
 - **Fenêtre** : LARGE / NORMALE / FERMEE
 - **Horizon** : LONG / MOYEN / COURT
 - **Signal** : direction, score d'alignement MTF, solidité 1D/1W
