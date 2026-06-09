@@ -119,8 +119,8 @@ Curseur `guided_depth` qui contrôle l'espace de recherche :
 
 | depth | Comportement |
 |-------|-------------|
-| 0 | Chaos pur  |
-| 1 | Stratégie fixée selon la phase MTF, reste chaos |
+| 0 | *** |
+| 1 | Stratégie fixée selon la phase MTF, reste *** |
 | 2 | + Canaries de la stratégie gelés |
 | 3 | + Calibration depuis percentiles historiques (standard) |
 | 4 | Exploitation d'une pépite existante, mutation douce |
