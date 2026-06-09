@@ -35,7 +35,7 @@ Chaque "gène" est une stratégie de trading complète avec son propre ADN (para
 │      └── Worker N ──┘                                   │
 │                                                          │
 │  guided_depth : curseur chaos → exploitation            │
-│  0 = chaos pur     3 = calibration percentiles          │
+│  0 = ***     3 = calibration percentiles          │
 │  1 = stratégie/phase  4 = exploitation pépite           │
 └─────────────────────┬───────────────────────────────────┘
                       │ gènes promus
