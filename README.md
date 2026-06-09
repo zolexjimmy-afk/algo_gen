@@ -139,9 +139,9 @@ Utilisée pour détecter les clones et enrichir le patrimoine en diversité rée
 ### Polarité B — Miroir bear
 Le système entraîne deux populations de gènes en parallèle :
 - **H** (bull) : sur les vecteurs MTF normaux
-- **B** (bear) : sur les vecteurs MTF inversés (EXPANSION↔CONTRACTION, LONG↔SHORT, BULL↔BEAR, position_Y → 1-Y)
+- **B** (bear) : sur les vecteurs MTF inversés 
 
-L'inversion est appliquée à un seul endroit (`_inverser_label_contexte()`) — le reste du pipeline est identique. Les gènes B tradent les mouvements baissiers avec la même rigueur que les H tradent les mouvements haussiers.
+L'inversion est appliquée à un seul endroit — le reste du pipeline est identique. Les gènes B tradent les mouvements baissiers avec la même rigueur que les H tradent les mouvements haussiers.
 
 ---
 
@@ -188,16 +188,14 @@ project/
 # Entraînement standard
 python -m gene_trainer --tous --pool contexte_mtf_btc.json --mode C --workers 4
 
-# Mode exploration chaos (trouver de nouvelles pépites)
-python -m gene_trainer --tous --pool contexte_mtf_btc.json \
-  --explorer --force-promo --depuis-zero --guided-depth 1
+...
 
 # Mode bear miroir
 python -m gene_trainer --tous --pool contexte_mtf_btc_b.json \
   --polarite B --mode C --workers 4
 
 # Run ciblé sur un contexte spécifique
-python gene_lab.py --contexte EXPANSION_LARGE_LONG \
+python gene_lab.py --contexte EXP_L_Long \
   --generations 30 --mutation 0.45 --arene 20
 
 # Boucle entraînement continu (H + B en alternance)
