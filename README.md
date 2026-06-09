@@ -167,7 +167,7 @@ project/
 │   └── gene_trainer_cfg.py # Hyperparamètres
 ├── gene_trader.py          # ADN + backtest d'un gène
 ├── gene_trainer_core.py    # GeneTrainer : arène + boucle évolution
-├── gene_coherence.py       # Moteur chaos/guidé + canaries
+├── gene_coherence.py       # Moteur guidé + canaries
 ├── gene_contexte_mtf.py    # Agent météo MTF
 ├── gene_empreinte.py       # Empreinte comportementale 3D
 ├── gene_registre.py        # Métadata + généalogie
