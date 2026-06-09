@@ -102,8 +102,7 @@ Architecture multi-worker avec coordinator comme seul writer disque pour éviter
 
 **Score composite** :
 ```
-profit_factor × 0.28  +  sharpe × 0.22  +  wr_pondéré × 0.18
-+ couverture × 0.17   +  pénalité_dd × 0.10  +  réactivité × 0.05
+profit_factor,  +  sharpe   +  wr_pondéré + couverture   +  pénalité_dd +  réactivité 
 ```
 
 **Logique de promotion** :
@@ -120,7 +119,7 @@ Curseur `guided_depth` qui contrôle l'espace de recherche :
 
 | depth | Comportement |
 |-------|-------------|
-| 0 | Chaos pur — tout aléatoire dans les plages valides |
+| 0 | Chaos pur  |
 | 1 | Stratégie fixée selon la phase MTF, reste chaos |
 | 2 | + Canaries de la stratégie gelés |
 | 3 | + Calibration depuis percentiles historiques (standard) |
